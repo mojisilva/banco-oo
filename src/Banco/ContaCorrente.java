@@ -1,8 +1,9 @@
 package Banco;
 
-public class ContaCorrente {
+public class ContaCorrente extends Conta {
+    public ContaCorrente(Cliente cliente) {
+        super(cliente);
+        tipo = "Conta Corrente";
 
-    int agencia;
-    int numero;
-    double saldo;
+    }
 }
